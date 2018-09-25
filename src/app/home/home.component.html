@@ -1,0 +1,11 @@
+<div id="home">
+    <div style="z-index: 100; margin-right: 20px;" class="ui top right attached label">
+        <div class="ui basic small button" (click)="zoomIn()">+</div>
+        <div class="ui basic small button" (click)="zoomOut()">-</div>
+        {{page}} / {{totalPages}}
+    </div>
+    <div id="container">
+        <pdf-viewer [after-load-complete]="afterLoadComplete" [render-text]="false" [src]="source" [zoom]="zoom"
+            [show-all]="showAll" [page]="page" [original-size]="true" style="display: block;"> </pdf-viewer>
+    </div>
+</div>

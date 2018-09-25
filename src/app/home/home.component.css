@@ -1,0 +1,9 @@
+#home {
+    background: black;
+}
+
+#container {
+    background: green;
+    width: 700px;
+    overflow: scroll;
+}
